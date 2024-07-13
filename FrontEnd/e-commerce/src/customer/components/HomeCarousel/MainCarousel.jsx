@@ -5,11 +5,11 @@ import { mainCarouselData } from './MainCarouselData';
 
 
 const MainCarousel = () => {
-    const items = mainCarouselData.map((item)=>
-        <img className='cursor-pointer' src={item.image} role='presentation' alt=''/>
+    const items = mainCarouselData.map((item) =>
+        <img className='cursor-pointer' src={item.image} role='presentation' alt='' />
     )
 
-    return(
+    return (
         <AliceCarousel
             autoPlay
             autoPlayStrategy="none"

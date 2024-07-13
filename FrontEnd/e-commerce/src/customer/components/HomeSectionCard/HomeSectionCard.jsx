@@ -1,19 +1,19 @@
 import React from 'react'
 
-const HomeSectionCard = () => {
+const HomeSectionCard = ({product}) => {
   return (
-    <div className='cursor-pointer flex flex-col item-center bg-white rounded-lg shadow-lg overflow-hidded w-[15rem] mx-3'>
+    <div className='cursor-pointer flex flex-col items-center bg-white rounded-lg shadow-lg overflow-hidded h-[20rem] w-[15rem] mx-3 border'>
 
-        <div className='h-[13rem] w-[10rem]'>
-            <img className='object-cover object-top w-full h-full' src='https://m.media-amazon.com/images/I/61JJFR2Dm4L._AC_UL480_FMwebp_QL65_.jpg' alt=''/>
-        </div>
+      <div className='h-[13rem] w-[10rem]'>
+        <img className='object-cover object-top w-full h-full' src={product.imageUrl} alt='' />
+      </div>
 
-        <div className='p-4'>
-            <h3 className='text-lg font-medium text-gray-900'>Nike</h3>
-            <p className='mt-2 text-sm text-gray-500'>Premium Essential Cotton T-Shirt</p>
+      <div className='p-4 text-left'>
+        <h3 className='text-lg font-medium text-gray-900 overflow-hidden'>{product.name}</h3>
+        <p className='mt-2 text-sm text-gray-500 overflow-hidden'>{product.desc}</p>
 
-        </div>
-      
+      </div>
+
     </div>
   )
 }
