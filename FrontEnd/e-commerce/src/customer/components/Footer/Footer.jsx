@@ -4,7 +4,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div>
-      <Grid className='pt-8 bg-black text-white mt-10 py-3'
+      <Grid className='pt-8 bg-black text-white mt-10 py-3 text-center'
         container
       >
         <Grid item xs={12} sm={6} md={3}>
