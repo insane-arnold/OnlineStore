@@ -2,7 +2,6 @@ import React from 'react'
 import MainCarousel from '../../components/HomeCarousel/MainCarousel';
 import HomeSectionCarousel from '../../components/HomeSectionCarousel/HomeSectionCarousel'
 import {mensTopwear} from '../../../data/mensTopwear.jsx'
-import Footer from '../../components/Footer/Footer.jsx';
 
 const HomePage = () => {
   return (
@@ -14,7 +13,6 @@ const HomePage = () => {
         <HomeSectionCarousel data={mensTopwear} sectionName={"Men's Top Wear"}/>
         <HomeSectionCarousel data={mensTopwear} sectionName={"Men's Top Wear"}/>
       </div>
-      <Footer />
     </div>
   );
 };
